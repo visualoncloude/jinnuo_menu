@@ -6,7 +6,7 @@ let cfg0 = {
 };
 var connection = pkg.mysql.createConnection(cfg0);
 connection.connect();
-var str = "SHOW TABLES; ";
+var str = "SELECT * FROM `menu`; ";
 
 connection.query(str, function (error, results, fields) {
   connection.end();
