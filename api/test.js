@@ -1,4 +1,8 @@
-let cfg0 = {};
+let cfg0 = {
+        "host":"loclhost",
+        "user":"root",
+        "password":"Montreal107#",
+        "database":"test"};
 var connection = pkg.mysql.createConnection(cfg0);
 connection.connect();
 var str = "SHOW TABLES; ";
