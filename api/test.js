@@ -1,5 +1,5 @@
 let cfg0 = {
-        "host":"loclhost",
+        "host":"localhost",
         "user":"root",
         "password":"Montreal107#",
         "database":"test"
