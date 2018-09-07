@@ -1,6 +1,6 @@
 let cfg0 = {
         "host":"localhost",
-        "user":"root",
+        "user":"root@localhost",
         "password":"Montreal107#",
         "database":"test"
 };
