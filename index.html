@@ -4,26 +4,95 @@
         <title>Jade dore</title> 
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="jinnuo_css/food_menu.css" rel="stylesheet">
-        <link href="food_add.html" >
+       <!--
+        <link  rel="import" href="warnings.html">-->
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jquery-3.3.1/jquery-3.3.1.min.js"></script>
         <script src="jinnuo_script/jinnuo_menu.js"></script>
     </head>
         
     <body>
+        
+
         <div class="container"> 
-            
+            <div class="row">
                 <div class="col-sm-6" style="background-color:yellow;">
                     food menu
                     <button class="btn" onclick="createimages()">createimages</button>
+                    <!--button class="btn" onclick="addFoodItem()">addFoodItem</button-->
                     <div id = "menu_list" >  
                     </div>
                 </div>
                 <div class="col-sm-4" style="background-color:pink;">
-                    order detail  
+                    order detail 
+                    <ul class="list-group" id = "foodItem_list">
+            
+                    </ul>
                 </div>
+            </div>
+            <script>
+            
+            </script>
+         <!-- Modal -->
+  <div class="modal " id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal_title">Modal Header</h4>
+            <span id="menu_price">price</span>
+            <span id="menu_id">number</span>
+          </div>
+        <div class="modal-body">
+            <p>辣度:</p>
+            <form>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" >0
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio" checked>1
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">2
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="optradio">3
+                </label>
+            </form>
+             <form>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="" checked>葱
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="" checked>姜
+                </label>
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="" checked>蒜
+                </label>
+            </form>
+            
+            <div >
+                <label for="exampleFormControlTextarea1">特殊</label>
+                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="4"></textarea>
+            </div>
             
         </div>
-       
         
+        <div class="modal-footer">
+             <button type="button" class="btn btn-default" onclick= "addFoodItem(this)" data-dismiss="modal">add</button>
+            <span>
+            <button type="button" class="btn btn-default" onclick= "closeModal()" data-dismiss="modal">Close</button>
+            </span>
+        </div>
+      </div>
+    
+    </div>
+  </div> 
+    
+     <!-- Modal --> 
+        
+        </div>
+      <script src="jinnuo_script/jinnuo_initial.js"></script>
     </body>
 </html>
